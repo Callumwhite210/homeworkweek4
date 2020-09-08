@@ -1,0 +1,13 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+}
+.my-container {
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
