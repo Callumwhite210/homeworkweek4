@@ -15,20 +15,38 @@
               <a class="nav-link" href="#">View Highscores<span class="sr-only">(current)</span></a> <!--Will save highscore then display-->
             </li>
         </ul>
-        <span class="navbar-text">:Timer</span> <!--Timer-->
+        <span class="navbar-text">Timer</span> <!--Timer-->        
       </nav>
 <main class="container text-center my-container">
+    
+    <p id="timer">0</p>
+    <button id="start" type="button" class="btn btn-dark start">Start!</button>
+    
     <div class="row">
         <div class="col">
            <h2>Question area</h2> <!--This will change depending on the question-->
         </div>
     </div>
-    <div class="row">
+    <div class="row answercol"> <!--Will be the Answer area. Have buttons or forms for answers-->
         <div class="col">
-            <p> Answer area</p> <!--Will be the Answer area. Have buttons or forms for answers-->
+            <button type="button" class="btn btn-dark button1">Answer 1</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-dark button2">Answer 2</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-dark button3">Answer 3</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-dark button4">Answer 4</button>
         </div>
     </div>
 </main>
+<!-- Questions
+What does CSS stand for?
+What does HTML stand for?
+
+-->
 <!--
     Add navbar with reset highscore button on left and a timer on far right
     Main body/
@@ -38,6 +56,7 @@
     have a muted text stating the correct answer
     main body/
 -->
+<script src="java.js"></script>
 </body>
 </html>
 
