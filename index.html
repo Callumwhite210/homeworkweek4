@@ -8,37 +8,52 @@
     <title>Coding Quiz</title>
 </head>
 <body>
+    <!--Nav bar-->
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Coding Quiz</span>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">View Highscores<span class="sr-only">(current)</span></a> <!--Will save highscore then display-->
             </li>
-        </ul>
-        <span class="navbar-text">Timer</span> <!--Timer-->        
-      </nav>
+        </ul>       
+    </nav>
+<!--End of Nav-->
+
 <main class="container text-center my-container">
-    
-    <p id="timer">0</p>
-    <button id="start" type="button" class="btn btn-dark start">Start!</button>
-    
+    <!--Timer-->
     <div class="row">
         <div class="col">
-           <h2>Question area</h2> <!--This will change depending on the question-->
+            <h1>Timer:</h1>
+            <h3 id="timer">0</h3>                     
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <button id="start" type="button" class="btn btn-dark start">Start!</button>
+        </div>        
+        <div class="col">
+            <button id="finish" type="button" class="btn btn-dark finish">Finish!</button>
+        </div>
+    </div> 
+    <!--Questions-->
+    <div class="row">
+        <div class="col">
+           <h2 id="question">Question area</h2> <!--This will change depending on the question-->
+        </div>
+    </div>
+    <!--Answer buttons-->
     <div class="row answercol"> <!--Will be the Answer area. Have buttons or forms for answers-->
         <div class="col">
-            <button type="button" class="btn btn-dark button1">Answer 1</button>
+            <button type="button" class="btn btn-dark answer1">Answer 1</button>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-dark button2">Answer 2</button>
+            <button type="button" class="btn btn-dark answer2">Answer 2</button>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-dark button3">Answer 3</button>
+            <button type="button" class="btn btn-dark answer3">Answer 3</button>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-dark button4">Answer 4</button>
+            <button type="button" class="btn btn-dark answer4">Answer 4</button>
         </div>
     </div>
 </main>
@@ -48,7 +63,7 @@ What does HTML stand for?
 
 -->
 <!--
-    Add navbar with reset highscore button on left and a timer on far right
+    Add navbar with view highscore button on left and a timer on far right
     Main body/
     bellow have a bold text displaying questions
     Have a multiple choice buttons
