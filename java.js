@@ -5,8 +5,11 @@ var score = 0;
 var answer1 = document.getElementById("answer1");
 answer1.addEventListener("click",clicked);
 var answer2 = document.getElementById("answer2");
+answer2.addEventListener("click",clicked);
 var answer3 = document.getElementById("answer3");
+answer3.addEventListener("click",clicked);
 var answer4 = document.getElementById("answer4");
+answer4.addEventListener("click",clicked)
 var questionArray = document.getElementById('question')
 var index = 0
 // Loading Questions
@@ -31,30 +34,32 @@ function clicked(){
     
   else 
     console.log("Wrong")
+    
     //update intervel
     if (index===questions.length -1){
-        console.log("end of Game!")
+        alert("End of quiz!")
         return
     }    
     index ++;
+    document.getElementById("score").innerHTML = score
     questionLoader()    
 }
 //Questions
 var questions = [{
-    quest: "What is a question",
-    choice1: "1",
-    choice2: "2",
-    choice3: "3",
-    choice4: "4",
-    answer:  "2",
+    quest: "What is CSS for?",
+    choice1: "Styling HTML",
+    choice2: "Coding",
+    choice3: "Driving",
+    choice4: "Deleting Everything",
+    answer:  "Styling HTML",
 },
 {
-    quest: "What is a question ver 2",
-    choice1: "1",
-    choice2: "2",
-    choice3: "3",
-    choice4: "4",
-    answer:  "4",
+    quest: "How do you make a list in HTML?",
+    choice1: "<ul> <li>",
+    choice2: "<script>",
+    choice3: "<caption>",
+    choice4: "<list>",
+    answer:  "<ul> <li>",
 }
 ];
 //Timer
